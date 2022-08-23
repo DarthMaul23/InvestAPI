@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0dGBpLse4Wia8gSt4gAgQmfhJeD5hE5dG3zv1jhG7xY=",
+  "Source": "API.Data.Collector",
+  "BasePath": "_content/API.Data.Collector",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

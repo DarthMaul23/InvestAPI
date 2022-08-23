@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\fandm\webServer</_PublishTargetUrl>
+    <History>True|2022-02-16T11:24:06.3433762Z;True|2022-02-16T12:21:31.7784693+01:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConnectionString1">
+      <Value>Data Source=%28localdb%29\MSSQLLocalDB%3bInitial Catalog=ToDoApp%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="ConnectionString2">
+      <Value>Data Source=%28localdb%29\MSSQLLocalDB%3bInitial Catalog=ToDoApp%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="API.Data.Collector.Models.TickerNamesContext">
+      <Value>Data Source=%28localdb%29\MSSQLLocalDB%3bInitial Catalog=ToDoApp%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </EFMigrations>
+    <EFMigrations Include="API.Data.Collector.Models.TickerPricesContext">
+      <Value>Data Source=%28localdb%29\MSSQLLocalDB%3bInitial Catalog=ToDoApp%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </EFMigrations>
+    <EFMigrations Include="API.Data.Collector.Models.ToDoContext">
+      <Value>Data Source=%28localdb%29\MSSQLLocalDB%3bInitial Catalog=ToDoApp%3bIntegrated Security=True%3bConnect Timeout=30%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
