@@ -6,7 +6,7 @@ using Sentry;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseSentry();
-
+builder.Services.AddCors();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -36,9 +36,16 @@ builder.Services.AddTransient<PortfolioService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+   
 var app = builder.Build();
 
+// Add Cors 
+app.UseCors(builder =>
+{
+    builder.AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader();
+});
 app.UseSentryTracing();
 
 app.UseRouting();
@@ -59,7 +66,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
-
+app.UseCors("corsapp");
 app.UseAuthorization();
 
 app.MapControllers();
