@@ -9,7 +9,7 @@ namespace API.Data.Collector.Models
 
         public PortfolioContext(DbContextOptions<PortfolioContext> options) : base(options)
         {
-
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

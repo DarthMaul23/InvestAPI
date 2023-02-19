@@ -10,7 +10,7 @@ namespace API.Data.Collector.Controllers
     public class PortfolioController : ControllerBase
     {
 
-        public PortfolioService _portfolioService;
+        private PortfolioService _portfolioService;
 
         public PortfolioController(PortfolioService portfolioService)
         {

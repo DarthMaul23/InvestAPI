@@ -11,7 +11,7 @@ builder.WebHost.UseSentry();
 
 builder.Services.AddControllers();
 
-var connectionString_Ticker = builder.Configuration.GetConnectionString("ConnectionString1");
+var connectionString_Ticker = builder.Configuration.GetConnectionString("ConnectionString2");
 
 builder.Services.AddDbContext<TickerNamesContext>(opt => opt.UseSqlServer(connectionString_Ticker));
 builder.Services.AddDbContext<TickerPricesContext>(opt => opt.UseSqlServer(connectionString_Ticker));
